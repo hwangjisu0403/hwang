@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header{
+            height: 50px;
+            position: relative;
+            background-color: blueviolet;
+        }
+
+        header h1{
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        header .btn-menu{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: transparent;
+            border: 0;
+            width: 50px;
+            height: 50px;
+        }
+        header .btn-menu span{
+            display: block;
+            width: 35px;
+            height: 3px;
+            background-color: #fff;
+            margin: 0 auto 4px;
+        }
+        header .btn-menu span:last-child{
+            margin-bottom: 0;
+        }
+
+        header nav{
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        header nav .util{
+            display: flex;
+            color: #fff;
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+        header nav .util li{
+            border: 1px solid #fff;
+            border-radius: 100px;
+            padding: 3px 12px;
+            margin: 0 5px;
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        header nav .gnb li{
+            padding: 5px 15px;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            text-decoration: underline;
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+
+        @media all and (min-width: 1000px){
+            header{
+                height: 150px;
+            }
+
+            header .btn-menu{
+                display: none;
+            }
+
+            header nav{
+                position: unset;
+                height: unset;
+            }
+            header nav .close{
+                display: none;
+            }
+
+            header nav .util{
+                position: absolute;
+                top: 20px;
+                right: 50px;
+                height: unset;
+            }
+            header nav .util li{
+                font-size: 16px;
+                font-weight: bold;
+                border: 0;
+                background-color: transparent;
+            }
+
+            header nav .gnb{
+                display: flex;
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                width: 100%;
+                justify-content: center;
+            }
+            header nav .gnb li{
+                border: 0;
+                padding: 0;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 0 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COMPANY LOGO</h1>
+        <button class="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul class="util">
+                <li>login</li>
+                <li>join</li>
+                <li>cart</li>
+                <li>q&a</li>
+            </ul>
+            <ul class="gnb">
+                <li>About Us</li>
+                <li>Product</li>
+                <li>Online Shop</li>
+                <li>Contact Us</li>
+                <li>News</li>
+            </ul>
+            <button class="close">close</button>
+        </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-menu").on("click", function(){
+            $("nav").animate({
+                "left" : 0
+            })
+        });
+        $(".close").on("click", function() {
+            $("nav").animate({
+                "left" : "100%"
+            })
+        })
+    </script>
+</body>
+</html>

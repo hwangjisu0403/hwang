@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    vertical-align: top;
+    
+}
+button,input,select{border: 0; background-color: rgba(0,0,0,0);}
+
+
+
+
+
+
+
+
+@media all and(min-width:1200px){
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .banner .pic{
+        height:600px;
+    }
+    .banner .txt{
+        left:60%;
+        top:130px;
+    }
+
+
+    main{
+        padding:50px 0 130px;
+        width:1200px;
+        margin:0 auto;
+    }
+
+
+
+
+    .con3 .txt{
+        width:418px;
+        height:296px;
+    }
+    
+    footer .wrap{
+        margin:0;
+    }
+
+    footer .wrap .f-menu{
+        justify-content: flex-start;
+        width:1000px;
+    }
+
+
+    
+    footer .wrap address{
+        display:flex;
+    }
+
+    footer .wrap p{
+        margin-right:25px;
+    }
+
+
+    footer .wrap .select{
+        margin:0;
+        position:absolute;
+        top:0;
+        right:210px;
+    }
+    footer .wrap .wa{
+        top:0;
+        left:unset;
+        right:50px;
+    }
+
+    footer .wrap .copy{
+        position:absolute;
+        top:36px;
+    }
+
+}
+    
